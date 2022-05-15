@@ -6,27 +6,41 @@
     <!--NOTE: Stylesheets usually aren't just stuffed
     into the head of a project. This time it is.-->
     <style>
-        p {
+        p{
+            color: cadetblue;
+        }
+        /* class selector */
+        .generalParagraph {
             color: blue;
             font-size: 20px;
             width:260px;
         }
-
+        /* element selector */
         h1 {
             color: green;
             font-size: 36px;
             text-align: center;
+        /* id selector */
+        }
+        #mainPoint{
+            background-color: gray;
+            font-weight: bold;
+            font-style: italic;
+        }
+        p.big{
+            font-size: 40px;
         }
     </style>
 </head>
 <body>
     <h1>Anatomy of a CSS Rule</h1>
     <h2>Subheading 1</h2>
-    <p>CSS works by associating rules with HTML elements. These rules
+    <p class="big">CSS works by associating rules with HTML elements. These rules
         govern how the content of specified elements should be displayed.
-        A CSS rule contains two parts: a selector and a declaration.
+        A CSS rule contains <span id="mainPoint">two parts: a selector and a declaration.</span>
     </p>
     <h2>Subheading 2</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos veniam ullam inventore similique, debitis quam cupiditate labore animi quisquam? Ratione, tempora delectus provident atque optio quaerat. Aliquam delectus eum beatae.</p>
+    <p class="generalParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos veniam ullam inventore similique, 
+        debitis quam cupiditate labore animi quisquam? Ratione, tempora delectus provident atque optio quaerat. Aliquam delectus eum beatae.</p>
 </body>
 </html>
