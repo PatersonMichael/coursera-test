@@ -7,7 +7,7 @@
     into the head of a project. This time it is.-->
     <style>
         p{
-            color: cadetblue;
+            color: rgb(96, 164, 167);
         }
         /* class selector */
         .generalParagraph {
@@ -30,6 +30,30 @@
         p.big{
             font-size: 40px;
         }
+        section li {
+            list-style: none;
+        }
+        a:link, a:visited {
+            text-decoration: none;
+            background-color: green;
+            border: 1px solid blue;
+            color: black;
+            display: block;
+            width: 200px;
+            text-align: center;
+            margin-bottom: 1px;
+        }
+        a:hover, a:active {
+            background-color: red;
+            color: purple;
+        }
+
+        section li:nth-child(1){
+            font-size: 24px
+        }
+        p.big:hover, #mainPoint:hover{
+            background-color: aliceblue;
+        }
     </style>
 </head>
 <body>
@@ -42,5 +66,20 @@
     <h2>Subheading 2</h2>
     <p class="generalParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos veniam ullam inventore similique, 
         debitis quam cupiditate labore animi quisquam? Ratione, tempora delectus provident atque optio quaerat. Aliquam delectus eum beatae.</p>
+    <p>
+        Working with pesudo Classes here.
+    </p>
+    <section>
+    <p>
+        <h2>Psuedo-Class Selctions</h2>
+        Lookin good I'd say, looking at an unordered list of links right here:
+    </p>
+    <ul>
+        <li><a href="http://localhost:3000/">Home</a></li>
+        <li><a href="http://localhost:3000/Playground1.html">Playground</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+    </ul>
+    </section>
+
 </body>
 </html>
