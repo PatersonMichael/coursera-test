@@ -1,4 +1,17 @@
 body{
-    background-color: gray;
     font-size: 130%;
+}
+header{
+    font-size: 25px;
+    font-style: oblique;
+}
+h1{
+    background-color: grey;
+    width: 800px;
+    text-align: center;
+}
+#rollBones {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-style: italic;
 }
